@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TriLink Wireless - Modern ISP Design System */
+
+@layer base {
+  :root {
+    /* TriLink Brand Colors - Gold, Green, Blue */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    /* TriLink Blue - Trust & Connectivity */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 217 91% 55%;
+
+    /* TriLink Gold - Affordability & Accessibility */
+    --secondary: 35 91% 65%;
+    --secondary-foreground: 220 15% 20%;
+    --secondary-hover: 35 91% 60%;
+
+    /* TriLink Green - Growth & Community */
+    --trilink-green: 142 76% 36%;
+    --trilink-green-foreground: 0 0% 98%;
+
+    /* Neutral Backgrounds */
+    --muted: 216 12% 97%;
+    --muted-foreground: 216 19% 46%;
+
+    --accent: 195 32% 94%;
+    --accent-foreground: 195 100% 28%;
+
+    /* Status Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* UI Elements */
+    --border: 216 12% 91%;
+    --input: 216 12% 94%;
+    --ring: 195 100% 28%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 216 19% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 216 19% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 216 19% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 195 100% 42%;
+    --primary-foreground: 0 0% 8%;
+    --primary-hover: 195 100% 38%;
+
+    --secondary: 43 74% 56%;
+    --secondary-foreground: 0 0% 8%;
+    --secondary-hover: 43 74% 50%;
+
+    --muted: 216 19% 15%;
+    --muted-foreground: 216 12% 65%;
+
+    --accent: 195 32% 15%;
+    --accent-foreground: 195 100% 42%;
+
+    --success: 142 71% 55%;
+    --success-foreground: 0 0% 8%;
+    
+    --warning: 38 92% 60%;
+    --warning-foreground: 0 0% 8%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 8%;
+
+    --border: 216 19% 20%;
+    --input: 216 19% 15%;
+    --ring: 195 100% 42%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
